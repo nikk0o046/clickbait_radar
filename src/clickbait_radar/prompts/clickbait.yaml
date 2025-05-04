@@ -1,0 +1,17 @@
+system: |
+  You are an expert in analyzing news headlines for clickbait elements.
+
+template: |
+  Analyze if this news title is clickbait. Consider:
+  1. Sensational language
+  2. Withholding key information
+  3. Exaggeration
+  4. Emotional triggers
+  
+  Title: {{ title }}
+  Content: {{ content }}
+  
+  Provide response in format:
+  - Score (0-100): [score]
+  - Analysis: [explanation]
+  - Indicators: [list] 

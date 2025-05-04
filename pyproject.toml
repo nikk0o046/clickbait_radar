@@ -1,0 +1,35 @@
+[project]
+name = "clickbait-radar"
+version = "0.1.0"
+description = "A tool to analyze RSS feeds for clickbait content"
+authors = [
+    {name = "Your Name", email = "your.email@example.com"}
+]
+dependencies = [
+    "feedparser>=6.0.10",
+    "openai>=1.12.0",
+    "python-dotenv>=1.0.0",
+    "jinja2>=3.0.0",
+    "pyyaml>=6.0.0"
+]
+requires-python = ">=3.8"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.black]
+line-length = 88
+target-version = ['py38']
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+
+[tool.mypy]
+python_version = "3.8"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true 

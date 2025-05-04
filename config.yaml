@@ -1,0 +1,14 @@
+# Analysis Configuration
+analysis:
+  check_interval_minutes: 60
+  max_articles_per_check: 10
+
+# OpenAI Configuration
+openai:
+  model: "gpt-3.5-turbo"
+
+# RSS Feed Configuration
+rss_feeds:
+  - url: "https://example.com/feed"
+    name: "Example Feed"
+    category: "news"
